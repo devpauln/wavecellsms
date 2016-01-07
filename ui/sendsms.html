@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Wavecell SMS</title>
+
+    <!-- Bootstrap -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,900,300' rel='stylesheet' type='text/css'>
+    <link href="../assets/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="../assets/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+    	<div class="row">
+    		<div class="col-md-2 col-md-offset-2 big-text">
+    			<h1>SEND <span class='white'>SMS</span></h1>
+    		</div>
+    		<div class="col-md-5 white-container">
+    			<form id='sendsms'>
+				  <div class="form-group">
+				    <label for="exampleInputEmail1">Source<span class='red'>*</span><span class='red' id="er-src"></span></label>
+				    <input type="text" class="form-control" id="source" placeholder="Source" required="required">
+				  </div>
+				  <div class="form-group">
+				    <label for="exampleInputPassword1">Destination<span class='red'>*</span><span class='red' id="er-dst"></span></label>
+				    <input type="text" class="form-control" id="destination" placeholder="Destination" required="required">
+				  </div>
+				  <div class="form-group">
+				    <label for="exampleInputPassword1">Message Body<span class='red'>*</span><span class='red' id="er-msg"></span></label>
+				    <textarea rows=5 class="form-control" id="message" placeholder="Message Body" required="required"></textarea>
+				  </div>
+				  <div class="form-group">
+				    <label for="exampleInputPassword1">Date and Time</label>
+				    <div class='input-group date' id='datetime'>
+						<input type='text' class="form-control" id='dt' />
+						<span class="input-group-addon">
+							<span class="glyphicon glyphicon-calendar"></span>
+						</span>
+					</div>
+				  <button type='submit' class="btn btn-flat">SEND</button>
+				</form>
+    		</div>
+    	</div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/jquery.validate.js"></script>
+    <script src="../assets/js/moments.js"></script>
+    <script src="../assets/js/id.js"></script>
+    <script src="../assets/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="../assets/js/app.js"></script>
+  </body>
+</html>
